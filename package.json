@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc -w",
+    "start:fresh": "yarn install && yarn build && yarn start"
+  },
+  "name": "solana-address-monitor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.8",
+    "dotenv": "^16.4.7"
+  }
+}
